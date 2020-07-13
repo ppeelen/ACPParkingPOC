@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "title": "Plats 1",
+    "types": [
+      "residence",
+      "visiting"
+    ],
+    "street": "Storgatan",
+    "coordinates": {
+      "lon": 58.0,
+      "lat": 18.0
+    }.
+    "tu"
+  }
+]

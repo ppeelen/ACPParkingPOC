@@ -15,6 +15,9 @@
 		2A8FD0B924B3937C006903B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8FD0B724B3937C006903B1 /* LaunchScreen.storyboard */; };
 		2A8FD0C424B3937C006903B1 /* ParkPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FD0C324B3937C006903B1 /* ParkPlayTests.swift */; };
 		2A8FD0CF24B3937C006903B1 /* ParkPlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FD0CE24B3937C006903B1 /* ParkPlayUITests.swift */; };
+		2A8FD0E324B3941D006903B1 /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8FD0E224B3941D006903B1 /* CarPlay.framework */; };
+		2A8FD0E624B39436006903B1 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FD0E524B39436006903B1 /* CarPlaySceneDelegate.swift */; };
+		2ADBBC1124B3D7F9001D826F /* Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBBC1024B3D7F9001D826F /* Locations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		2A8FD0CA24B3937C006903B1 /* ParkPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8FD0CE24B3937C006903B1 /* ParkPlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkPlayUITests.swift; sourceTree = "<group>"; };
 		2A8FD0D024B3937C006903B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8FD0E024B39401006903B1 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		2A8FD0E224B3941D006903B1 /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = System/Library/Frameworks/CarPlay.framework; sourceTree = SDKROOT; };
+		2A8FD0E524B39436006903B1 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		2ADBBC0D24B3CBFD001D826F /* StockholmRoute.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = StockholmRoute.gpx; sourceTree = "<group>"; };
+		2ADBBC1024B3D7F9001D826F /* Locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Locations.json; sourceTree = "<group>"; };
+		2AEACAA624B3A5F10035725E /* ParkPlay.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = ParkPlay.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8FD0E324B3941D006903B1 /* CarPlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 				2A8FD0C224B3937C006903B1 /* ParkPlayTests */,
 				2A8FD0CD24B3937C006903B1 /* ParkPlayUITests */,
 				2A8FD0AA24B3937A006903B1 /* Products */,
+				2A8FD0DF24B39401006903B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +110,9 @@
 		2A8FD0AB24B3937A006903B1 /* ParkPlay */ = {
 			isa = PBXGroup;
 			children = (
+				2AEACAA624B3A5F10035725E /* ParkPlay.entitlements */,
+				2A8FD0E424B39425006903B1 /* CarPlay */,
+				2A8FD0DC24B3938B006903B1 /* Resouces */,
 				2A8FD0AC24B3937A006903B1 /* AppDelegate.swift */,
 				2A8FD0AE24B3937A006903B1 /* SceneDelegate.swift */,
 				2A8FD0B024B3937A006903B1 /* ViewController.swift */,
@@ -126,6 +140,32 @@
 				2A8FD0D024B3937C006903B1 /* Info.plist */,
 			);
 			path = ParkPlayUITests;
+			sourceTree = "<group>";
+		};
+		2A8FD0DC24B3938B006903B1 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBBC0D24B3CBFD001D826F /* StockholmRoute.gpx */,
+				2ADBBC1024B3D7F9001D826F /* Locations.json */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		2A8FD0DF24B39401006903B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A8FD0E224B3941D006903B1 /* CarPlay.framework */,
+				2A8FD0E024B39401006903B1 /* HomeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A8FD0E424B39425006903B1 /* CarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				2A8FD0E524B39436006903B1 /* CarPlaySceneDelegate.swift */,
+			);
+			path = CarPlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +273,7 @@
 			files = (
 				2A8FD0B924B3937C006903B1 /* LaunchScreen.storyboard in Resources */,
 				2A8FD0B624B3937C006903B1 /* Assets.xcassets in Resources */,
+				2ADBBC1124B3D7F9001D826F /* Locations.json in Resources */,
 				2A8FD0B424B3937A006903B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +301,7 @@
 			files = (
 				2A8FD0B124B3937A006903B1 /* ViewController.swift in Sources */,
 				2A8FD0AD24B3937A006903B1 /* AppDelegate.swift in Sources */,
+				2A8FD0E624B39436006903B1 /* CarPlaySceneDelegate.swift in Sources */,
 				2A8FD0AF24B3937A006903B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParkPlay/ParkPlay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B3SHVL3L5;
 				INFOPLIST_FILE = ParkPlay/Info.plist;
@@ -455,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParkPlay/ParkPlay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B3SHVL3L5;
 				INFOPLIST_FILE = ParkPlay/Info.plist;
